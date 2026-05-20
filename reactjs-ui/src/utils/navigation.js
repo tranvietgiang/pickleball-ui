@@ -1,0 +1,4 @@
+export function navigateTo(href) {
+  window.history.pushState({}, '', href)
+  window.dispatchEvent(new PopStateEvent('popstate'))
+}
